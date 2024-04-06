@@ -1,0 +1,172 @@
+Ans1)
+#include<iostream>
+using namespace std;
+int main(){
+int a,b;
+cout<<"Enter the first number : ";
+cin>>a;
+cout<<"Enter the second number : ";
+cin>>b;
+if (a>b) cout<<a<<" is greater than "<<b;
+else if (a==b) cout<<"both are equal ";
+else cout<<b<<" is greater than "<<a;
+return 0;
+}
+
+Ans2)
+#include<iostream>
+using namespace std;
+int main(){
+float r,circumfrence,area;
+cout<<"Enter the radius : ";
+cin>>r;
+circumfrence = 2*3.1415*r;
+area = 3.1415*r*r;
+if (circumfrence>area)
+cout<<"circumfrence is greater than area ";
+else if (circumfrence==area) cout<<"Both are equal";
+else cout<<"area is greater than circumfrence";
+return 0;
+}
+Ans3)
+#include<iostream>
+using namespace std;
+int main(){
+int n;
+cout<<"Enter a year : " ;
+cin>>n;
+if (n%4==0)
+cout<<"leap year ";
+else cout<<"not a leap year ";
+return 0;
+}
+Ans4)
+#include<iostream>
+using namespace std;
+int main(){
+int l,b,p,a;
+cout<<"Enter the length : ";
+cin>>l;
+cout<<"Enter the breath : ";
+cin>>b;
+p = 2*(l+b);
+a = l*b;
+if (p>a)
+cout<<"perimeter is greater than area ";
+else if(p==a) cout<<"Both are equal ";
+else cout<<"area is greater than perimeter";
+return 0;
+}
+Ans5)
+#include<iostream>
+using namespace std;
+int main(){
+int side1,side2,side3;
+cout<<"Enter the value of side1 : ";
+cin>>side1;
+cout<<"Enter the value of side2 : ";
+cin>>side2;
+cout<<"Enter the value of side3 : ";
+cin>>side3;
+if (side1==side2&&side2==side3) cout<<"Equilateral triangle ";
+else if(side1!=side2&&side2!=side3&&side3!=side1) cout<<"Scalene triangle";
+else if(side1==side2||side2==side3||side1==side3) cout<<"isosceles triangle";
+return 0;
+}
+Ans6)
+#include<iostream>
+using namespace std;
+int main(){
+int a,b,c;
+cout<<"Enter 1st student marks : ";
+cin>>a;
+cout<<"Enter 2nd student marks : ";
+cin>>b;
+cout<<"Enter 3rd student marks : ";
+cin>>c;
+if (a>b)
+{
+    if (a>c)
+    {
+        cout<<"A is the highest : "<<a;
+    }
+    else cout<<"C is the highest : "<<c;
+}
+if (b>a)
+{
+    if (b>c)
+    {
+        cout<<"B is the highest : "<<b;
+    }
+    else cout<<"C is the highest : "<<c;
+}
+else if (a==b&&b==c) cout<<"All three are equal";
+else cout<<"C is the highest : "<<c;
+return 0;
+}
+Ans7)
+#include<iostream>
+using namespace std;
+int main() {
+int x,y;
+cout<<"Enter the value of x coordinate ";
+cin>>x;
+cout<<"Enter the value of y coordinate ";
+cin>>y;
+if (x==0)
+{
+    cout<<"the point lies on y - axis ";
+}
+else if(y==0) cout<<"the point lies on x - axis ";
+else if (x==0&&y==0) cout<<"the point is at the origin";
+else cout<<"the point somewhere in the plane ";
+return 0;
+}
+Ans8)
+#include<iostream>
+using namespace std;
+int main(){
+int x1,x2,x3,y1,y2,y3;
+cout<<"Enter x1 : ";
+cin>>x1;
+cout<<"Enter x2 : ";
+cin>>x2;
+cout<<"Enter x3 : ";
+cin>>x3;
+cout<<"Enter y1 : ";
+cin>>y1;
+cout<<"Enter y2 : ";
+cin>>y2;
+cout<<"Enter y3 : ";
+cin>>y3;
+float m1,m2;
+m1 = (y2 - y1)/(x2 - x1);
+m2 = (y3 - y1)/(x3 - x1);
+if (m1==m2)
+{
+    cout<<"All 3 points lie on the same line ";
+
+}
+else cout<<"All 3 points dont lie on the same line ";
+
+    return 0;
+}
+Ans9)
+#include<iostream>
+using namespace std;
+int main(){
+char ch;
+cout<<"Enter a charcter : ";
+cin>>ch;
+int y = (int)ch;
+if (y>47&&y<58)
+{
+    cout<<"digit";
+}
+else if((y>64&&y<91)||(y>96&&y<123))
+cout<<"alphabet";
+else cout<<"special character";
+return 0;
+}
+Ans10)
+value of b and c are respectively 300 and 200
